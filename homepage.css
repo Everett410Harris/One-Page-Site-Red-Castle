@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "boyd";
+    src: url("fonts/Boyduncial-mlDa.ttf");
+}
+
+body {
+    font-family: "boyd";
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("images/castle_wall_2.jpg");
+    background-size: 100%;
+    padding: 120px;
+}
+
+h1 {
+    font-size: 65px;
+    color: #fffb00;
+    display: inline;
+    margin: 30px auto;
+    padding-left: 1px;
+}
+
+.header_text {
+    font-size: 70px;
+    color: #db0808;
+    display: inline;
+    margin: 38px auto;
+    padding-left: 540px;
+}
