@@ -30,3 +30,67 @@ h1 {
     margin: 38px auto;
     padding-left: 540px;
 }
+
+.parallax-section {
+    height: 600px; /* Adjust section height as needed */
+    background-size: cover;
+    background-attachment: fixed; /* Enables parallax effect */
+    position: relative; /* Allows for positioning hover elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 3px black; /* Subtle text shadow */
+}
+
+.parallax-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.parallax-section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+  /* Hover Effect for Each Section */
+.parallax-section:hover .overlay {
+    opacity: 0.7; /* Opacity on hover */
+}
+  .parallax-section:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+    opacity: 0; /* Initial opacity */
+    transition: opacity 0.3s ease;
+}
+
+.parallax-section .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centers content vertically */
+    z-index: 1; /* Ensures content appears above overlay */
+}
+
+  /* Background Images for Each Section (Replace with your own) */
+#home {
+    background-image: url("images/castle_wall_1.jpg");
+}
+
+#products{
+    background-image: url("images/bottles_on_shelf.jpg"); /* Replace with
+  your image */
+}
+
+#contact {
+    background-image: url("images/parchment-background.jpg"); /* Replace
+  with your image */
+}
+
+#map {
+    background-image: url("images/castle_wall_2.jpg"); /* Replace with your image */
+}
